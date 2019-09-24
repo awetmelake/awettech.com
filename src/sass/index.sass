@@ -1,0 +1,480 @@
+//variables
+$primary-color: #f3f3f3
+// $primary-color: #353939
+$secondary-color: #273746
+$tertiary-color: #0d47a1
+
+$primary-text-color: #000
+$secondary-text-color: white
+
+//defaults
+html
+  scroll-behavior: smooth
+
+*
+  margin: 0
+  padding: 0
+
+  a
+    color: inherit
+
+
+body
+  background: $secondary-color
+  height: 3000px
+  padding-top: 56px
+
+  .btn
+    opacity: 0.8
+    cursor: pointer
+    transition: all 0.5s
+
+    &:hover
+      opacity: 1
+      transform: scale(1.1)
+
+  .nav-wrapper
+    color: #f3f3f3
+    font-family: "Roboto Mono"
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 1000
+
+    h1
+      width: fit-content
+      font-size: 2.5em
+      margin: 0 0 0 30px
+      font-family: "Monoton"
+
+    nav
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: auto
+      height: 56px
+      background: rgba(30, 144, 255, 0.8)
+
+      ul
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        margin-right: 20px
+
+        li
+          height: 56px
+          a
+            height: 100%
+            text-align: center
+            color: $secondary-text-color
+            margin: auto
+            transition: all 0.3s
+            line-height: 4
+            display: flex
+            align-items: center
+            justify-content: center
+            i
+              margin-left: 20px
+            &:hover
+              background-color: #2196f3
+
+    #toggle-nav
+      cursor: pointer
+      display: none
+
+    .nav-links-mobile
+      position: absolute
+      top: 54px
+      left: -100vw
+      width: 100%
+      display: none
+      opacity: .8
+      ul
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        background: rgba(30, 144, 255, 0.8)
+        li
+          a
+            font-size: 1em
+            padding: 0
+
+
+
+  hr
+    margin-top: 2em
+    width: 80%
+
+  .landing-img
+    min-height: calc(80vh - 56px)
+    background-image: url("./images/landing.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    opacity: 1
+    color: #f6f6f6
+    font-family: "Roboto Condensed"
+    font-size: 1.5em
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .header
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-around
+      width: 60%
+
+      div:nth-child(1)
+        margin-bottom: 2em
+        padding: 2em
+        max-width: 100%
+
+    .contact-pointer
+      padding: 1.5em
+      background: rgba(0, 0, 0, 0.5)
+      border-radius: 10px
+      transition: opacity 1s
+      width: 400px
+
+      &:hover
+        opacity: 1
+
+      &-btn
+        margin-top: 2em
+        width: 100%
+
+    h1
+      display: flex
+
+      p
+        display: inline
+        transition: color 0.3s
+        &:hover
+          color: blue
+
+    p
+      transition: color 0.3s
+      position: relative
+      &:hover
+        color: lightblue
+
+  .main
+    #projects
+      background-color: $primary-color
+
+    #about-me
+      background-color: #fcfcfc
+
+      h5
+        font-size: 1.4em
+        font-family: "Roboto Condensed"
+
+      .about-cards
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+        grid-gap: 4em
+        align-items: center
+        padding: 60px 0 30px
+        width: 80%
+        margin: auto
+        .about-card
+          height: 100%
+          width: 100%
+          text-align: center
+          p
+            font-size: 1.1em
+
+    #contact
+      background-color: #fcfcfc
+      .contact-main
+        width: 80%
+        font-family: 'roboto Condensed'
+        .contact-info
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          justify-content: space-around
+          div
+            padding: 2em
+            margin-bottom: 2em
+
+        .contact-form
+          padding: 2em
+
+    #skills
+      background-color: $primary-color
+
+    .section-tile
+      min-height: 50vh
+      margin: auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 4% 2%
+
+      .github-icon
+        float: right
+
+      &-description
+        font-family: "Roboto Condensed"
+        font-size: 1.2em
+        width: 80%
+        margin: 0 0 40px 0
+
+    .project-tiles
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+      grid-column-gap: 5em
+      grid-row-gap: 2em
+      align-items: baseline
+      width: 70%
+
+      .project-tile
+        background-color: transparent
+        margin: 3em auto 0
+        perspective: 1000px
+        transition: transform 0.5s
+
+        &-inner
+          position: relative
+          width: 100%
+          height: 100%
+          text-align: center
+          transform-style: preserve-3d
+          transition: transform 0.5s
+
+        &-front
+          backface-visibility: hidden
+          height: 100%
+          width: 100%
+
+        &-back
+          backface-visibility: hidden
+          width: 100%
+          // height: 10%
+          transform: rotateY(180deg)
+          position: absolute
+          top: 0
+
+          background-color: #ffffff
+          border-radius: 2px
+
+          &-inner
+            padding: 10% 7%
+            height: 80%
+            width: 80%
+            margin: auto
+
+        &:hover .project-tile-inner
+          transition: all 0.5s
+          transform: rotateY(180deg)
+
+        &-img
+          border-radius: 2px
+          width: 100%
+
+        &-description
+          font-family: "Roboto Condensed"
+          text-align: center
+          padding: 1em 0
+          color: $primary-text-color
+
+          &-title
+            color: $tertiary-color
+            padding-bottom: 0.5em
+            font-size: 1.5em
+
+    .about-main
+      font-family: "Roboto Condensed"
+      width: 80%
+      color: $primary-text-color
+
+      &-description
+        width: 80%
+        margin-top: 2em
+        p
+          line-height: 2
+          font-family: "Roboto Condensed"
+          font-size: 1.2em
+          margin-top: 1em
+
+        i
+          font-size: 52px
+
+      &-skills-title
+        font-family: "Roboto Condensed"
+        font-size: 1.8em
+
+    .skills
+      width: 100%
+      min-height: 50vh
+      margin: 0 auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+
+      h1
+        width: 80%
+
+      .icon
+        margin: auto
+        width: 100%
+
+      &-wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        grid-gap: 2em
+        align-items: center
+        justify-content: center
+        width: 80%
+
+        p
+          margin-top: 2em
+          font-size: 1.3em
+          font-family: "Roboto Condensed"
+          text-align: center
+
+      .description
+        font-size: 1.2em
+        max-width: 80%
+        padding: 1em
+        text-align: center
+        font-family: "Roboto Condensed"
+
+      &-one
+        &-imgs
+          display: grid
+          grid-template-columns: 1fr 1fr 1fr
+          box-shadow: 1px 1px 5px gray
+          padding: 1em
+          height: 120px
+          background-color: #fafafa
+          border-radius: 2px
+          .html-icon
+            max-width: 85px
+
+          .css-icon
+            max-width: 64px
+
+          .js-icon
+            max-width: 65px
+
+      &-two
+        &-imgs
+          display: grid
+          grid-template-columns: 1fr 1fr
+          box-shadow: 1px 1px 5px gray
+          padding: 1em
+          height: 120px
+          background-color: #fafafa
+          border-radius: 2px
+          .react-icon
+            max-width: 140px
+
+          .redux-icon
+            max-width: 220px
+
+      &-three
+        &-imgs
+          display: grid
+          grid-template-columns: 1fr
+          box-shadow: 1px 1px 5px gray
+          height: 120px
+          padding: 1em
+          background-color: #fafafa
+          border-radius: 2px
+          .jquery-icon
+            max-width: 200px
+            width: 100%
+
+    h1
+      font: 800 35px "Roboto Slab"
+      margin: 1em 0 0
+      width: 80%
+
+  // project info modals
+  .modal
+    max-height: 85% !important
+    width: 80%
+
+    &-content
+      &-header
+        &-description
+          width: 80%
+          padding:  2em
+          width: 100%
+          text-align: center
+          font-size: 1.2em
+
+      &-info
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        text-align: left
+        padding: 2em
+        font-size: 1.2em
+        line-height: 2
+
+
+      img
+        margin-bottom: 2em
+        max-width: 90%
+        width: 800px
+        float: right
+
+//mobile responsive
+@media (max-width: 900px)
+  body
+    .section-tile
+      width: 100%
+
+    .project-tiles
+      width: 100% !important
+
+@media (max-width: 600px)
+  body
+    .nav-wrapper
+      .nav-links
+        display: none !important
+
+      #toggle-nav
+        display: initial
+        position: absolute
+        font-size: 30px
+        right: 10px
+
+      .nav-links-mobile
+        position: absolute
+        top: 56px
+        left: -100vw
+        width: 100%
+        background-color: $secondary-color
+        display: none
+        display: initial
+        ul
+          grid-gap: 0
+          width: 100%
+
+    .landing-img
+      min-height: 400px !important
+      .header
+        width: 80%
+        div:nth-child(1)
+          display: none
+
+    .section-tile
+      width: 100%
+
+    .about-main
+      width: 90% !important
+
+    .about-cards
+      width: 100% !important
+
+    .modal-content-info
+      padding: 0
+
+    #contact
+      .contact-main
+        .contact-info
+          justify-content: flex-start !important

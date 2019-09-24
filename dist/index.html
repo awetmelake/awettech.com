@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Awettech.com</title>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Awet Melake's website">
+    <link rel="stylesheet" href="./index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"
+      type="image/png"
+      href="./images/logo.png">
+
+    <!-- GOOGLEFONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Materialize -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- nav wrapper -->
+    <div class="nav-wrapper">
+      <!-- navigation -->
+      <nav class="">
+        <h1>
+          <a class="white-text" href="index.html" data-aos="fade-right">A</a>
+        </h1>
+
+        <ul class="nav-links hide-on-small-and-down" data-aos="fade-left">
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#about-me">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="./images/Resume.pdf" download>RESUME
+            <i class="material-icons ">cloud_download</i>
+          </a></li>
+        </ul>
+
+        <!-- toggle menu for smaller screens -->
+        <i class="material-icons" id="toggle-nav" >menu</i>
+
+        <div class="nav-links-mobile">
+          <ul class="">
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#about-me">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="dark-overlay">
+
+    <!-- start of landing -->
+    <div class="landing-img">
+      <div class="header">
+      <div data-aos="fade-right">
+        <h1>
+          <p data-aos="fade-right" data-aos-delay="100">
+            a
+          </p>
+          <p data-aos="fade-right" data-aos-delay="150">
+            w
+          </p>
+          <p data-aos="fade-right" data-aos-delay="200">
+            e
+          </p>
+          <p data-aos="fade-right" data-aos-delay="250">
+            t
+          </p>
+          <p data-aos="fade-right" data-aos-delay="300">
+            M
+          </p>
+          <p data-aos="fade-right" data-aos-delay="350">
+            e
+          </p>
+          <p data-aos="fade-right" data-aos-delay="400">
+            l
+          </p>
+          <p data-aos="fade-right" data-aos-delay="450">
+            a
+          </p>
+          <p data-aos="fade-right" data-aos-delay="500">
+            k
+          </p>
+          <p data-aos="fade-right" data-aos-delay="550">
+            e
+          </p>
+        </h1>
+        <p>
+          <i>
+            front end developer
+          </i>
+        </p>
+        <br>
+        "PEOPLE WORK BETTER TOGETHER"
+      </div>
+      <div class="contact-pointer center" data-aos="fade-left">
+        I'm looking for new projects. <br>
+        Want to work with me?
+        <br>
+        <a
+        href="#projects"
+        class="white-text btn blue contact-pointer-btn"
+        >
+        See projects
+      </a>
+          <a
+            href="#contact"
+            class="white-text btn blue contact-pointer-btn"
+          >
+            Get in touch
+          </a>
+      </div>
+    </div>
+    </div>
+    <!-- end of landing -->
+  </div>
+
+    <!-- start of main -->
+    <div class="main">
+      <!-- start of projects section -->
+      <div class="section-tile" id="projects">
+        <h1>projects</h1>
+        <hr />
+        <br>
+        <div class="section-tile-description">
+          Have a look at what I've done
+        </div>
+
+
+        <div class="project-tiles">
+
+          <!-- start of moviedb project tile -->
+          <div class="project-tile">
+            <div class="project-tile-inner">
+              <div class="project-tile-front">
+                <img
+                alt=""
+                class="project-tile-img"
+                src="./images/moviedb.jpg"
+                loading="lazy"
+                />
+                <div class="project-tile-description">
+                  <p class="project-tile-description-title">
+                    MovieDB
+                  </p>
+                  <p>
+                    React / Redux / Firestore / OMDB API
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-tile-back">
+                <div class="project-tile-back-inner">
+                  <div class="project-tile-description">
+                    <p class="project-tile-description-title">
+                      MovieDB
+                    </p>
+                    <p>
+                      Search your favorite movies and Tv shows
+                    </p>
+                  </div>
+
+                  <div class="divider"></div>
+
+                  <div>
+                    <br>
+                    <a
+                    class=" modal-trigger btn-small blue btn-block"
+                    href="#moviedb-modal"
+                    >More</a
+                    >
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of moviedb project tile -->
+
+          <!-- start of taskflow project tile -->
+          <div class="project-tile">
+            <div class="project-tile-inner">
+              <div class="project-tile-front">
+                <img
+                src="./images/taskflow.png"
+                loading="lazy"
+                alt=""
+                class="project-tile-img"
+                />
+                <div class="project-tile-description">
+                  <p class="project-tile-description-title">
+                    Taskflow
+                  </p>
+
+                  <p>
+                    React / Redux / Firestore / MaterialUI
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-tile-back">
+                <div class="project-tile-back-inner">
+                  <div class="project-tile-description">
+                    <p class="project-tile-description-title">
+                      Taskflow
+                    </p>
+                    <p>
+                      Personal task manager based on the Kanban system
+                    </p>
+                  </div>
+                  <div class="divider"></div>
+
+                  <br>
+                  <div>
+                    <a
+                    class=" modal-trigger btn-small blue btn-block"
+                    href="#taskflow-modal"
+                    >More</a
+                    >
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of taskflow project tile -->
+
+          <!-- start of tetris project tile -->
+          <div class="project-tile">
+            <div class="project-tile-inner">
+              <div class="project-tile-front">
+                <img
+                  src="./images/tetris.png"
+                  alt="tetris demo gif"
+                  class="project-tile-img"
+                  loading="lazy"
+                />
+                <div class="project-tile-description">
+                  <p class="project-tile-description-title">
+                    Tetris.js
+                  </p>
+                  <p>
+                    JS / HTML / CSS
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-tile-back">
+                <div class="project-tile-back-inner">
+                  <div class="project-tile-description">
+                    <p class="project-tile-description-title">
+                      Tetris.js
+                    </p>
+                    <p>
+                      The classic title Tetris in written in JS
+                    </p>
+                  </div>
+                  <div class="divider"></div>
+
+                  <br>
+                  <a
+                    class=" modal-trigger btn-small blue btn-block"
+                    href="#tetris-modal"
+                    >More</a
+                  >
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of tetris project tile -->
+
+          <!-- start of weatherapp project tile -->
+          <div class="project-tile">
+            <div class="project-tile-inner">
+              <div class="project-tile-front">
+                  <img
+                    src="./images/weatherapp.png"
+                    alt="weatherapp demo gif"
+                    class="project-tile-img"
+                    loading="lazy"
+                  />
+                <div class="project-tile-description">
+                  <p class="project-tile-description-title">
+                    Weather app
+                  </p>
+
+                  <p>
+                    React / Redux / Bootstrap / OpenWeatherAPI
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-tile-back">
+                <div class="project-tile-back-inner">
+                  <div class="project-tile-description">
+                    <p class="project-tile-description-title">
+                      Weather app
+                    </p>
+                    <p>
+                      Get the current and weekly forecast for your area
+                    </p>
+                  </div>
+                  <div class="divider"></div>
+
+                  <br>
+                  <div>
+                    <a
+                      class=" modal-trigger btn-small blue btn-block"
+                      href="#weatherapp-modal"
+                      >More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of weatherapp project tile -->
+
+
+        </div>
+      </div>
+      <!-- end of projects section -->
+
+      <!-- start of project modals -->
+        <!-- start of moviedb modal -->
+        <div id="moviedb-modal" class="modal">
+          <div class="modal-content center">
+            <div class="modal-content-header">
+              <h3 class="blue-text text-darken-3">
+                Movie DB <br>
+              </h3>
+              <a href="https://moviedb.awettech.com" class="modal-close blue-text btn-flat "
+              >See live</a>
+              <a href="https://github.com/awetmelake/movieapp" class="modal-close blue-text btn-flat "
+              >GitHub</a>
+              <div class="divider"></div>
+              <div class="modal-content-header-description">
+                React application that uses the Open Movie Database Api to let
+                users search from 1000's of media titles. Search movies, tv-shows,
+                and games. Click on posters to be taken to details page where the title's information such as plot and imbd rating is displayed. Users can add and remove titles from their watchlist
+                when signed in. Changes are updated live with Cloud Firestore. Uses Firebase for authentication and Firestore for
+                storing users movie collections. React router handles routing and 404 pages. Redux used for state management.
+              </div>
+            </div>
+            <div class="modal-content-info">
+              <img
+              src="./images/moviedb.webp"
+              alt="moviedb demo gif"
+              class="project-tile-img center"
+              loading="lazy"
+              />
+              <div class="modal-content-info-tech">
+                <h5>Technologies Used</h5>
+                <div class="divider blue"></div>
+                React
+                <br>
+                Redux <br>
+                Google Firebase/Firestore <br>
+                OpenMovieDatabaseApi <br>
+                React Router <br>
+                Sass <br>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >Close</a
+            >
+          </div>
+        </div>
+        <!-- end of moviedb modal -->
+      <!-- start of taskflow modal -->
+
+      <div id="taskflow-modal" class="modal">
+        <div class="modal-content center">
+          <div class="modal-content-header">
+            <h3 class="blue-text text-darken-3">Taskflow</h3>
+            <a href="https://taskflow.awettech.com" class="modal-close blue-text btn-flat  "
+            >See live</a>
+            <a href="https://github.com/awetmelake/myTaskManagerApp" class="modal-close blue-text btn-flat  "
+            >GitHub</a>
+                  <div class="divider"></div>
+            <div class="modal-content-header-description">
+              React app that lets users organize their tasks. Users can sign in and create task boards that contain sections/panels that contain tasks. Customize board, panel, and task names and their order. Create tasks with custom descriptions and colors signifying whatever you want then to, ability to filter tasks by color. Also includes the ability to select a task and set a timer - pomodoro/stopwatch. When the timer is stopped the elapsed time is added to the tasks "time spent" property, which you can see when you click on the task, for time tracking. Uses Firebase for authentication and Firestore for
+              storing user info with realtime update functionality. React router handles routing and 404 pages.
+            </div>
+          </div>
+
+          <div class="modal-content-info">
+            <img
+            src="./images/taskflow.webp"
+            alt="taskflow demo gif"
+            class="project-tile-img center"
+            loading="lazy"
+            />
+            <div class="modal-content-info-tech">
+                <h5>
+                  Technologies Used
+                </h5>
+                <div class="divider blue"></div>
+
+              React
+              <br>
+              Redux <br>
+              Google Firebase/Firestore <br>
+              React Router <br>
+              Materialize css<br>
+              Materialize UI
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
+      <!-- end of taskflow modal -->
+
+      <!-- start of tetris modal-->
+      <div id="tetris-modal" class="modal">
+        <div class="modal-content center">
+          <div class="modal-content-header">
+            <h3 class="blue-text text-darken-3">Tetris.js</h3>
+
+
+            <a href="./tetris/index.html" class="modal-close blue-text btn-flat "
+            >See live</a>
+            <a href="https://github.com/awetmelake/tetrisv2" class="modal-close blue-text btn-flat "
+            >GitHub</a>
+            <div class="divider"></div>
+            <div class="modal-content-header-description">
+              My first ever web project - Tetris. Made with vanilla JS using the MVC design. The project's code is seperated into 3 files: game logic, display and controller logic, corresponding to the seperate elements of the MVC framework. Order of operations: the controller class invokes methods within the game class that change data such as the values in the 2d array of the board matrix and the orientation of the current peice being controlled by the player, the display file contains the HTML canvas display that draws the visual representaion of this data as its changing.
+            </div>
+          </div>
+
+          <div class="modal-content-info">
+            <img
+            src="./images/tetris.gif"
+            alt=""
+            class="project-tile-img center"
+            loading="lazy"
+            />
+              <div class="modal-content-info-tech">
+                <h5>
+                  Technologies Used
+                </h5>
+                <div class="divider blue"></div>
+                JavaScript <br>
+                Html <br>
+                Css <br>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
+      <!-- end of tetris modal-->
+
+      <!-- start of weatherapp  modal -->
+      <div id="weatherapp-modal" class="modal">
+        <div class="modal-content center">
+          <div class="modal-content-header">
+            <h3 class="blue-text text-darken-3">Weather App</h3>
+            <br>
+
+            <a href="https://weather.awettech.com/" class="modal-close blue-text btn-flat "
+            >See live</a>
+            <a href="https://github.com/awetmelake/weatherapp" class="modal-close blue-text btn-flat "
+            >GitHub</a>
+            <div class="divider"></div>
+            <div class="modal-content-header-description">
+              React application that uses the Open Weather Map API to let
+              users get the forecast for their area based on browser navigation object, or user inputted zip code. Display's current forecast, wind speed, and various other info as well as icons signifying the conditions. Gives option to toggle metric/imperial. Hourly forecast display for future days are shown on a carousel, with the ability to click on individual times and get a detailed forecast report of it.
+            </div>
+          </div>
+
+          <div class="modal-content-info">
+            <img
+              src="./images/weatherapp.gif"
+              alt=""
+              class="project-tile-img center"
+              loading="lazy"
+            />
+            <div class="modal-content-info-tech">
+                <h5>
+                  Technologies Used
+                </h5>
+                <div class="divider blue"></div>
+              React
+              <br>
+              Redux <br>
+              Open Weather Map API <br>
+              Bootstrap
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
+      <!-- end of weatherapp  modal -->
+
+      <!-- start of about me-->
+      <div class="section-tile" id="about-me">
+        <h1>about me</h1>
+        <hr />
+        <br>
+        <div class="about-main-description">
+          <h5 class="center">
+            Hello there! My name is Awet and I'm looking for a front-end position. <br >
+            <br>
+            Why should you hire me? Here's a few reasons:
+          </h5>
+
+          <div class="about-cards">
+            <div class="about-card">
+              <i class="material-icons medium blue-text text-darken-4">
+                code
+              </i>
+              <h4>Passionate</h4>
+              <p>
+                 I spend most of my free
+                time coding or learning about web development. Currently learning to create full stack web apps from the ground up with express and webpack.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <i class="material-icons medium blue-text text-darken-4">
+                menu_book
+              </i>
+              <h4>Quick learner</h4>
+              <p>
+                Confident in my
+                ability to learn something new and put it into production. Always interested in learning best practices.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <i class="material-icons medium blue-text text-darken-4">
+                people
+              </i>
+              <h4>Adaptable</h4>
+              <p>
+                The most valuable thing I can provide to your company is the
+                ability to be molded to your stack. I'm always up for a challenge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of about-->
+
+      <!-- start of skills -->
+      <div class="section-tile" id="skills">
+        <div class="skills">
+          <h1>skills</h1>
+          <hr />
+          <br>
+          <div class="section-tile-description ">
+            What I know best
+          </div>
+
+          <div class="skills-wrapper">
+            <!-- skills one -->
+            <div class="skills-one">
+              <div class="skills-one-imgs">
+                <!-- html icon -->
+                <img
+                  class="icon html-icon"
+                  alt=""
+                  src="./images/HTML5_logo_and_wordmark.svg"
+                />
+                <!-- css3 icon -->
+                <img
+                  alt=""
+                  class="icon css-icon"
+                  src="./images/CSS3_logo_and_wordmark.svg"
+                />
+                <!-- javascript icon -->
+                <img
+                  class="icon js-icon"
+                  src="./images/Badge_js-strict.svg"
+                  alt=""
+                />
+              </div>
+
+              <p class="skills-one-description">
+                HTML/CSS/JS6
+              </p>
+            </div>
+
+            <!-- skills two -->
+            <div class="skills-two">
+              <div class="skills-two-imgs">
+                <!-- react icon -->
+                <img
+                  class="icon react-icon"
+                  src="./images/logo-react-blue-1.svg"
+                  alt=""
+                />
+                <!-- redux icon -->
+                <img
+                  class="icon redux-icon"
+                  src="./images/redux-logo-title-dark.png"
+                  alt=""
+                />
+              </div>
+
+              <p class="skills-two-description">
+                React + Redux
+              </p>
+            </div>
+
+            <!-- skills three -->
+            <div class="skills-three">
+              <div class="skills-three-imgs">
+                <img
+                  class="icon jquery-icon"
+                  src="./images/JQuery_logo_text.svg"
+                  alt=""
+                />
+              </div>
+              <p class="skills-three-description">
+                JQuery
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="section-tile-description center">
+
+            <br>
+            <br>
+            <br>
+            + responsive design / git version control / cli / sass / materialize /
+            bootstrap / HTTP request & response cycle
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- end of skills -->
+
+      <!-- start of contact -->
+      <div class="section-tile" id="contact">
+        <h1>contact</h1>
+        <hr />
+        <br>
+        <div class="contact-main">
+          <div class="contact-info">
+            <div>
+              <h5 class="">Email</h5>
+              <h6 class="">awetmelake@gmail.com</h6>
+              <a href="mailto:awetmelake@gmail.com">Click here to send an email</a>
+            </div>
+
+            <div>
+              <h5 class="">Phone</h5>
+              <h6 class="">(651) 431 1417</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of contact -->
+    </div>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <footer class="page-footer blue darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">
+              <a href="https://www.awettech.com">
+                awettech
+              </a>
+            </h5>
+            <p class="grey-text text-lighten-4">
+              Lets work together
+            </p>
+            <br>
+            <p class="grey-text text-lighten-4">
+              <i>
+              This project was created using materialize.css, jquery, and the AOS library
+            </i>
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">
+              <a
+                class="grey-text text-lighten-3"
+                href="#"
+                >Home</a
+              >
+            </h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#projects">Projects</a></li>
+              <li><a class="grey-text text-lighten-3" href="#about-me">About</a></li>
+              <li><a class="grey-text text-lighten-3" href="#skills">Skills</a></li>
+              <li><a class="grey-text text-lighten-3" href="#contact">Contact</a></li>
+              <li><a class="grey-text text-lighten-3" href="./images/Resume.pdf" download>Resume
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2019 Awet Melake
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- ANIMATION ON SCROLL LIBRARY -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
