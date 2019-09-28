@@ -2,6 +2,23 @@ const { task, src, watch, series, parallel, dest } = require("gulp");
 const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
 const sass = require("gulp-sass");
+const browserSync = require("browser-sync").create();
+
+// browserSync
+function browser_sync() {
+  browserSync.init({
+    server: {
+      open: false,
+      baseDir: "./dist"
+    }
+  });
+}
+
+// reload
+function reload(done) {
+  browserSync.reload();
+  done();
+}
 
 // copy html
 function html(done) {
@@ -28,17 +45,17 @@ function js(done) {
 // compile sass
 function css(done) {
   src("src/sass/*.sass")
-    .pipe(sass().on("error", sass.logError))
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(dest("dist"));
   done();
 }
 
 // watch files for changes
 function watch_files() {
-  watch("src/images/*", image);
-  watch("src/sass/*.sass", css);
-  watch("src/js/*.js", js);
-  watch("src/*.html", html);
+  watch("src/images/*", series(image, reload));
+  watch("src/sass/*.sass", series(css, reload));
+  watch("src/js/*.js", series(js, reload));
+  watch("src/*.html", series(html, reload));
 }
 
 // tasks
@@ -47,4 +64,4 @@ task("js", js);
 task("image", image);
 task("html", html);
 task("default", parallel(css, js, image, html));
-task("watch", series(watch_files));
+task("watch", parallel(browser_sync, watch_files));
