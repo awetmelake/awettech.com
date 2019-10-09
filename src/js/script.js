@@ -1,5 +1,8 @@
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 //scroll to section on nav link click
 $(document).ready(function() {
+  AOS.init();
   var navHidden = true;
 
   //change body padding based on window size and nav state

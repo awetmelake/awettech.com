@@ -96,8 +96,6 @@ body
             font-size: 1em
             padding: 0
 
-
-
   hr
     margin-top: 2em
     width: 80%
@@ -396,32 +394,38 @@ body
   .modal
     max-height: 85% !important
     width: 80%
-
     &-content
       &-header
-        &-description
-          width: 80%
-          padding:  2em
-          width: 100%
-          text-align: center
-          font-size: 1.2em
-
+        padding: 1em
+        &-btns
+          padding: 1em 0
+          a
+            font-size: 1.2em
+      &-description
+        width: 80%
+        padding: 1em
+        width: 100%
+        text-align: center
+        font-size: 1.2em
       &-info
         display: flex
         flex-wrap: wrap
         justify-content: space-around
         text-align: left
-        padding: 2em
+        padding-top: 1em
         font-size: 1.2em
         line-height: 2
-
-
+        &-tech
+          text-align: left
+          padding: .5em
+          &-items
+            margin-top: .5em
       img
         margin-bottom: 2em
         max-width: 90%
         width: 800px
         float: right
-        border: solid black 2px
+        border-radius: 5px
 
 //mobile responsive
 @media (max-width: 900px)

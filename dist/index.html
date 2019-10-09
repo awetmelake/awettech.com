@@ -4,7 +4,7 @@
     <title>Awettech.com</title>
     <meta charset="utf-8" />
     <meta name="Description" content="Awet Melake's website">
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon"
       type="image/png"
@@ -43,10 +43,10 @@
       <!-- navigation -->
       <nav class="">
         <h1>
-          <a class="white-text" href="index.html" data-aos="fade-right">A</a>
+          <a class="white-text" href="index.html" >A</a>
         </h1>
 
-        <ul class="nav-links hide-on-small-and-down" data-aos="fade-left">
+        <ul class="nav-links hide-on-small-and-down" >
           <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#about-me">ABOUT</a></li>
           <li><a href="#skills">SKILLS</a></li>
@@ -75,34 +75,34 @@
         <div class="header">
         <div data-aos="fade-right">
           <h1>
-            <p data-aos="fade-right" data-aos-delay="100">
+            <p>
               a
             </p>
-            <p data-aos="fade-right" data-aos-delay="150">
+            <p>
               w
             </p>
-            <p data-aos="fade-right" data-aos-delay="200">
+            <p>
               e
             </p>
-            <p data-aos="fade-right" data-aos-delay="250">
+            <p>
               t
             </p>
-            <p data-aos="fade-right" data-aos-delay="300">
+            <p>
               M
             </p>
-            <p data-aos="fade-right" data-aos-delay="350">
+            <p>
               e
             </p>
-            <p data-aos="fade-right" data-aos-delay="400">
+            <p>
               l
             </p>
-            <p data-aos="fade-right" data-aos-delay="450">
+            <p>
               a
             </p>
-            <p data-aos="fade-right" data-aos-delay="500">
+            <p >
               k
             </p>
-            <p data-aos="fade-right" data-aos-delay="550">
+            <p>
               e
             </p>
           </h1>
@@ -140,10 +140,10 @@
     <div class="main">
       <!-- start of projects section -->
       <div class="section-tile" id="projects">
-        <h1>projects</h1>
+        <h1 data-aos="fade-right">projects</h1>
         <hr />
         <br>
-        <div class="section-tile-description">
+        <div class="section-tile-description" data-aos="fade-in">
           Have a look at what I've done
         </div>
 
@@ -151,7 +151,7 @@
         <div class="project-tiles">
 
           <!-- start of moviedb project tile -->
-          <div class="project-tile">
+          <div class="project-tile" data-aos="fade-up">
             <div class="project-tile-inner">
               <div class="project-tile-front">
                 <img
@@ -199,7 +199,7 @@
           <!-- end of moviedb project tile -->
 
           <!-- start of taskflow project tile -->
-          <div class="project-tile">
+          <div class="project-tile" data-aos="fade-up">
             <div class="project-tile-inner">
               <div class="project-tile-front">
                 <img
@@ -247,7 +247,7 @@
           <!-- end of taskflow project tile -->
 
           <!-- start of tetris project tile -->
-          <div class="project-tile">
+          <div class="project-tile" data-aos="fade-up">
             <div class="project-tile-inner">
               <div class="project-tile-front">
                 <img
@@ -292,7 +292,7 @@
           <!-- end of tetris project tile -->
 
           <!-- start of weatherapp project tile -->
-          <div class="project-tile">
+          <div class="project-tile" data-aos="fade-up">
             <div class="project-tile-inner">
               <div class="project-tile-front">
                   <img
@@ -338,7 +338,6 @@
           </div>
           <!-- end of weatherapp project tile -->
 
-
         </div>
       </div>
       <!-- end of projects section -->
@@ -351,18 +350,24 @@
               <h3 class="blue-text text-darken-3">
                 Movie DB <br>
               </h3>
-              <a href="https://moviedb.awettech.com" class="modal-close blue-text btn-flat "
-              >See live</a>
-              <a href="https://github.com/awetmelake/movieapp" class="modal-close blue-text btn-flat "
-              >GitHub</a>
-              <div class="divider"></div>
-              <div class="modal-content-header-description">
-                React application that uses the Open Movie Database Api to let
-                users search from 1000's of media titles. Search movies, tv-shows,
-                and games. Click on posters to be taken to details page where the title's information such as plot and imbd rating is displayed. Users can add and remove titles from their watchlist
-                when signed in. Changes are updated live with Cloud Firestore. Uses Firebase for authentication and Firestore for
-                storing users movie collections. React router handles routing and 404 pages. Redux used for state management.
+              <div class="modal-content-header-btns">
+                <a href="https://moviedb.awettech.com" class="modal-close white-text btn-small  blue z-depth-0">
+                  <i class="material-icons white-text left">remove_red_eye</i>
+                  demo
+                </a>
+                <a href="https://github.com/awetmelake/movieapp" class="modal-close white-text btn-small  blue z-depth-0 darken-3">
+                  <i class="material-icons white-text left">code</i>
+                  GitHub
+                </a>
               </div>
+              <div class="divider"></div>
+            </div>
+            <div class="modal-content-description">
+              React application that uses the Open Movie Database Api to let
+              users search from 1000's of media titles. Search movies, tv-shows,
+              and games. Click on posters to be taken to details page where the title's information such as plot and imbd rating is displayed. Users can add and remove titles from their watchlist
+              when signed in. Changes are updated live with Cloud Firestore. Uses Firebase for authentication and Firestore for
+              storing users movie collections. React router handles routing and 404 pages. Redux used for state management.
             </div>
             <div class="modal-content-info">
               <img
@@ -374,13 +379,14 @@
               <div class="modal-content-info-tech">
                 <h5>Technologies Used</h5>
                 <div class="divider blue"></div>
-                React
-                <br>
-                Redux <br>
-                Google Firebase/Firestore <br>
-                OpenMovieDatabaseApi <br>
-                React Router <br>
-                Sass <br>
+                <ul class="modal-content-info-tech-items">
+                  <li>React + React Router</li>
+                  <li>Redux</li>
+                  <li>Sass</li>
+                  <li>Google Firebase</li>
+                  <li>React-router-firebase / Redux-firestore</li>
+                  <li>OpenMovieDatabaseAPI</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -397,16 +403,24 @@
         <div class="modal-content center">
           <div class="modal-content-header">
             <h3 class="blue-text text-darken-3">Taskflow</h3>
-            <a href="https://taskflow.awettech.com" class="modal-close blue-text btn-flat  "
-            >See live</a>
-            <a href="https://github.com/awetmelake/myTaskManagerApp" class="modal-close blue-text btn-flat  "
-            >GitHub</a>
-                  <div class="divider"></div>
-            <div class="modal-content-header-description">
+            <div class="modal-content-header-btns">
+              <a href="https://taskflow.awettech.com" class="modal-close white-text btn-small  blue z-depth-0">
+                <i class="material-icons white-text left">remove_red_eye</i>
+                demo
+              </a>
+              <a href="https://github.com/awetmelake/myTaskManagerApp" class="modal-close white-text btn-small blue darken-3 z-depth-0 ">
+                <i class="material-icons white-text left">
+                  code
+                </i>
+                GitHub
+              </a>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <div class="modal-content-description">
               React app that lets users organize their tasks. Users can sign in and create task boards that contain sections/panels that contain tasks. Customize board, panel, and task names and their order. Create tasks with custom descriptions and colors signifying whatever you want then to, ability to filter tasks by color. Also includes the ability to select a task and set a timer - pomodoro/stopwatch. When the timer is stopped the elapsed time is added to the tasks "time spent" property, which you can see when you click on the task, for time tracking. Uses Firebase for authentication and Firestore for
               storing user info with realtime update functionality. React router handles routing and 404 pages.
             </div>
-          </div>
 
           <div class="modal-content-info">
             <img
@@ -416,18 +430,17 @@
             loading="lazy"
             />
             <div class="modal-content-info-tech">
-                <h5>
-                  Technologies Used
-                </h5>
-                <div class="divider blue"></div>
-
-              React
-              <br>
-              Redux <br>
-              Google Firebase/Firestore <br>
-              React Router <br>
-              Materialize css<br>
-              Materialize UI
+              <h5>
+                Technologies Used
+              </h5>
+              <div class="divider blue"></div>
+              <ul class="modal-content-info-tech-items">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Google Firebase</li>
+                <li>React-router-firebase / Redux-firestore</li>
+                <li>Materialize UI / css</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -444,16 +457,23 @@
         <div class="modal-content center">
           <div class="modal-content-header">
             <h3 class="blue-text text-darken-3">Tetris.js</h3>
-
-
-            <a href="./tetris/index.html" class="modal-close blue-text btn-flat "
-            >See live</a>
-            <a href="https://github.com/awetmelake/tetrisv2" class="modal-close blue-text btn-flat "
-            >GitHub</a>
-            <div class="divider"></div>
-            <div class="modal-content-header-description">
-              My first ever web project - Tetris. Made with vanilla JS using the MVC design. The project's code is seperated into 3 files: game logic, display and controller logic, corresponding to the seperate elements of the MVC framework. Order of operations: the controller class invokes methods within the game class that change data such as the values in the 2d array of the board matrix and the orientation of the current peice being controlled by the player, the display file contains the HTML canvas display that draws the visual representaion of this data as its changing.
+            <div class="modal-content-header-btns center">
+              <a href="./tetris/index.html" class="modal-close white-text btn-small blue z-depth-0">
+                <i class="material-icons white-text left">remove_red_eye</i>
+                demo
+              </a>
+              <a href="https://github.com/awetmelake/tetrisv2" class="modal-close white-text btn-small darken-3 blue z-depth-0">
+                <i class="material-icons white-text left">
+                  code
+                </i>
+                GitHub
+              </a>
             </div>
+            <div class="divider"></div>
+          </div>
+
+          <div class="modal-content-description">
+            My first ever web project - Tetris. Made with vanilla JS using the MVC design. The project's code is seperated into 3 files: game logic, display and controller logic, corresponding to the seperate elements of the MVC framework. Order of operations: the controller class invokes methods within the game class that change data such as the values in the 2d array of the board matrix and the orientation of the current peice being controlled by the player, the display file contains the HTML canvas display that draws the visual representaion of this data as its changing.
           </div>
 
           <div class="modal-content-info">
@@ -468,9 +488,13 @@
                   Technologies Used
                 </h5>
                 <div class="divider blue"></div>
-                JavaScript <br>
-                Html <br>
-                Css <br>
+                <ul class="modal-content-info-tech-items">
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap</li>
+                  <li>Sass</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -487,17 +511,21 @@
         <div class="modal-content center">
           <div class="modal-content-header">
             <h3 class="blue-text text-darken-3">Weather App</h3>
-            <br>
-
-            <a href="https://weather.awettech.com/" class="modal-close blue-text btn-flat "
-            >See live</a>
-            <a href="https://github.com/awetmelake/weatherapp" class="modal-close blue-text btn-flat "
-            >GitHub</a>
+            <div class="modal-content-header-btns">
+              <a href="https://weather.awettech.com/" class="modal-close white-text btn-small blue z-depth-0 white-text">
+                <i class="material-icons white-text left">remove_red_eye</i>
+                demo
+              </a>
+              <a href="https://github.com/awetmelake/weatherapp" class="modal-close white-text btn-small darken-3 blue z-depth-0 ">
+                <i class="material-icons white-text left">code</i>
+                GitHub
+              </a>
+          </div>
             <div class="divider"></div>
-            <div class="modal-content-header-description">
-              React application that uses the Open Weather Map API to let
-              users get the forecast for their area based on browser navigation object, or user inputted zip code. Display's current forecast, wind speed, and various other info as well as icons signifying the conditions. Gives option to toggle metric/imperial. Hourly forecast display for future days are shown on a carousel, with the ability to click on individual times and get a detailed forecast report of it.
-            </div>
+          </div>
+          <div class="modal-content-description">
+            React application that uses the Open Weather Map API to let
+            users get the forecast for their area based on browser navigation object, or user inputted zip code. Display's current forecast, wind speed, and various other info as well as icons signifying the conditions. Gives option to toggle metric/imperial. Hourly forecast display for future days are shown on a carousel, with the ability to click on individual times and get a detailed forecast report of it.
           </div>
 
           <div class="modal-content-info">
@@ -508,15 +536,14 @@
               loading="lazy"
             />
             <div class="modal-content-info-tech">
-                <h5>
-                  Technologies Used
-                </h5>
+              <h5>Technologies Used</h5>
                 <div class="divider blue"></div>
-              React
-              <br>
-              Redux <br>
-              Open Weather Map API <br>
-              Bootstrap
+                <ul class="modal-content-info-tech-items">
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Open Weather Map API</li>
+                  <li>Bootstrap</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -530,29 +557,29 @@
 
       <!-- start of about me-->
       <div class="section-tile" id="about-me">
-        <h1>about me</h1>
+        <h1 data-aos="fade-right">about me</h1>
         <hr />
         <br>
         <div class="about-main-description">
-          <h5 class="center">
+          <h5 class="center" data-aos="fade-in">
             Hello there! My name is Awet (uh-wet) and I'm looking for a front-end position. <br >
             <br>
             Why should you hire me? Here's a few reasons:
           </h5>
 
           <div class="about-cards">
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-up">
               <i class="material-icons medium blue-text text-darken-4">
                 code
               </i>
               <h4>Passionate</h4>
               <p>
                  I spend most of my free
-                time coding or learning about web development. Currently learning to create full stack web apps from the ground up with express and webpack.
+                time coding or learning about web development. Currently learning php and mysql.
               </p>
             </div>
 
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-up">
               <i class="material-icons medium blue-text text-darken-4">
                 menu_book
               </i>
@@ -563,7 +590,7 @@
               </p>
             </div>
 
-            <div class="about-card">
+            <div class="about-card" data-aos="fade-up">
               <i class="material-icons medium blue-text text-darken-4">
                 people
               </i>
@@ -581,16 +608,16 @@
       <!-- start of skills -->
       <div class="section-tile" id="skills">
         <div class="skills">
-          <h1>skills</h1>
+          <h1 data-aos="fade-right">skills</h1>
           <hr />
           <br>
-          <div class="section-tile-description ">
+          <div class="section-tile-description" data-aos="fade-in">
             What I know best
           </div>
 
           <div class="skills-wrapper">
             <!-- skills one -->
-            <div class="skills-one">
+            <div class="skills-one" data-aos="fade-up">
               <div class="skills-one-imgs">
                 <!-- html icon -->
                 <img
@@ -618,7 +645,7 @@
             </div>
 
             <!-- skills two -->
-            <div class="skills-two">
+            <div class="skills-two" data-aos="fade-up">
               <div class="skills-two-imgs">
                 <!-- react icon -->
                 <img
@@ -640,7 +667,7 @@
             </div>
 
             <!-- skills three -->
-            <div class="skills-three">
+            <div class="skills-three" data-aos="fade-up">
               <div class="skills-three-imgs">
                 <img
                   class="icon jquery-icon"
@@ -654,12 +681,12 @@
             </div>
           </div>
           <br>
-          <div class="section-tile-description center">
+          <div class="section-tile-description center" data-aos="fade-in">
 
             <br>
             <br>
             <br>
-            + responsive design / git version control / cli / webpack / grunt / sass /
+            + responsive design / git / cli / webpack / gulp / sass /
             bootstrap / HTTP request & response cycle
             <br>
           </div>
@@ -669,18 +696,18 @@
 
       <!-- start of contact -->
       <div class="section-tile" id="contact">
-        <h1>contact</h1>
+        <h1 data-aos="fade-right">contact</h1>
         <hr />
         <br>
         <div class="contact-main">
           <div class="contact-info">
-            <div>
+            <div data-aos="fade-right">
               <h5 class="">Email</h5>
               <h6 class="">awetmelake@gmail.com</h6>
               <a href="mailto:awetmelake@gmail.com">Click here to send an email</a>
             </div>
 
-            <div>
+            <div data-aos="fade-left">
               <h5 class="">Phone</h5>
               <h6 class="">(651) 431 1417</h6>
             </div>
