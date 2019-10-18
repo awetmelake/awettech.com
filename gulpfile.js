@@ -1,5 +1,13 @@
-const { task, src, watch, series, parallel, dest } = require("gulp");
+const {
+  task,
+  src,
+  watch,
+  series,
+  parallel,
+  dest
+} = require("gulp");
 const imagemin = require("gulp-imagemin");
+const autoPrefixer = require("gulp-autoprefixer");
 const uglify = require("gulp-uglify");
 const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
@@ -45,10 +53,14 @@ function js(done) {
 // compile sass
 function css(done) {
   src("src/sass/*.sass")
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(sass({
+      outputStyle: "compressed"
+    }).on("error", sass.logError))
+    .pipe(autoPrefixer())
     .pipe(dest("dist"));
   done();
 }
+
 
 // watch files for changes
 function watch_files() {
