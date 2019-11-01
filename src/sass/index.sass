@@ -31,7 +31,6 @@ body
 
     &:hover
       opacity: 1
-      transform: scale(1.1)
 
   .nav-wrapper
     color: #f3f3f3
@@ -248,13 +247,12 @@ body
         &-back
           backface-visibility: hidden
           width: 100%
-          // height: 10%
           transform: rotateY(180deg)
           position: absolute
           top: 0
-
           background-color: #ffffff
           border-radius: 2px
+          box-shadow: 10px 10px 10px lightgrey
 
           &-inner
             padding: 10% 7%
@@ -375,15 +373,31 @@ body
       &-three
         &-imgs
           display: grid
+          grid-template-columns: 1fr 1fr
+          box-shadow: 1px 1px 5px gray
+          height: 120px
+          padding: 1em
+          background-color: #fafafa
+          border-radius: 2px
+          .bootstrap-icon
+            max-width: 90px
+            width: 100%
+          .sass-icon
+            max-width: 100px
+            width: 100%
+      &-four
+        &-imgs
+          display: grid
           grid-template-columns: 1fr
           box-shadow: 1px 1px 5px gray
           height: 120px
           padding: 1em
           background-color: #fafafa
           border-radius: 2px
-          .jquery-icon
+          .node-icon
             max-width: 200px
             width: 100%
+
 
     h1
       font: 800 35px "Roboto Slab"
@@ -398,9 +412,8 @@ body
       &-header
         padding: 1em
         &-btns
+          font-weight: 600
           padding: 1em 0
-          a
-            font-size: 1.2em
       &-description
         width: 80%
         padding: 1em
