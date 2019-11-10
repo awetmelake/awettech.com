@@ -18,11 +18,12 @@ html
   a
     color: inherit
 
-
 body
   background: $secondary-color
   height: 3000px
   padding-top: 56px
+  .pointer
+    cursor: pointer
 
   .btn
     opacity: 0.8
@@ -50,9 +51,10 @@ body
       display: flex
       justify-content: space-between
       align-items: center
-      margin: auto
       height: 56px
+      margin: auto
       background: rgba(30, 144, 255, 0.8)
+      border-bottom: 1px solid grey
 
       ul
         display: grid
@@ -101,7 +103,7 @@ body
 
   .landing-img
     min-height: calc(100vh - 56px)
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("./images/landing.jpg")
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("./images/landing.jpg")
     background-size: cover
     background-repeat: no-repeat
     background-position: center
@@ -186,13 +188,13 @@ body
         width: 80%
         font-family: 'roboto Condensed'
         .contact-info
-          display: flex
-          flex-direction: row
-          flex-wrap: wrap
-          justify-content: space-around
+          display: block
+          // display: flex
+          // flex-direction: row
+          // flex-wrap: wrap
+          // justify-content: space-around
           div
-            padding: 2em
-            margin-bottom: 2em
+            padding: 1em
 
         .contact-form
           padding: 2em
@@ -342,6 +344,7 @@ body
           display: grid
           grid-template-columns: 1fr 1fr 1fr
           box-shadow: 1px 1px 5px gray
+          border: 1px solid lightgrey
           padding: 1em
           height: 120px
           background-color: #fafafa
@@ -360,6 +363,7 @@ body
           display: grid
           grid-template-columns: 1fr 1fr
           box-shadow: 1px 1px 5px gray
+          border: 1px solid lightgrey
           padding: 1em
           height: 120px
           background-color: #fafafa
@@ -375,6 +379,7 @@ body
           display: grid
           grid-template-columns: 1fr 1fr
           box-shadow: 1px 1px 5px gray
+          border: 1px solid lightgrey
           height: 120px
           padding: 1em
           background-color: #fafafa
@@ -390,6 +395,7 @@ body
           display: grid
           grid-template-columns: 1fr
           box-shadow: 1px 1px 5px gray
+          border: 1px solid lightgrey
           height: 120px
           padding: 1em
           background-color: #fafafa
@@ -406,38 +412,35 @@ body
 
   // project info modals
   .modal
-    max-height: 85% !important
+    max-height: 80% !important
     width: 80%
     &-content
+      font-family: "roboto condensed"
       &-header
         padding: 1em
         &-btns
-          font-weight: 600
-          padding: 1em 0
+          // font-weight: 600
+          a
+            margin: 1em 0
       &-description
-        width: 80%
-        padding: 1em
+        padding: 1em 0em
         width: 100%
-        text-align: center
         font-size: 1.2em
-      &-info
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-around
+
+      &-tech
         text-align: left
-        padding-top: 1em
-        font-size: 1.2em
-        line-height: 2
-        &-tech
-          text-align: left
-          padding: .5em
-          &-items
-            margin-top: .5em
-      img
+        padding: .5em
+        list-style-type: disc !important
+        &-items
+          margin-top: .5em
+          list-style-type: disc !important
+          li
+            list-style-type: disc !important
+            font-size: 1.2em
+            line-height: 1.2em
+      .project-tile-img
         margin-bottom: 2em
-        max-width: 90%
-        width: 800px
-        float: right
+        width: 100%
         border-radius: 5px
 
 //mobile responsive
@@ -466,7 +469,7 @@ body
         top: 56px
         left: -100vw
         width: 100%
-        background-color: $secondary-color
+        // background-color: $secondary-color
         display: none
         display: initial
         ul
