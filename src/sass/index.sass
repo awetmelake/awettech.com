@@ -54,7 +54,6 @@ body
       height: 56px
       margin: auto
       background: rgba(30, 144, 255, 0.8)
-      border-bottom: 1px solid grey
 
       ul
         display: grid
@@ -189,10 +188,6 @@ body
         font-family: 'roboto Condensed'
         .contact-info
           display: block
-          // display: flex
-          // flex-direction: row
-          // flex-wrap: wrap
-          // justify-content: space-around
           div
             padding: 1em
 
@@ -254,13 +249,16 @@ body
           top: 0
           background-color: #ffffff
           border-radius: 2px
-          box-shadow: 10px 10px 10px lightgrey
+          box-shadow: 5px 5px 20px lightblue
 
           &-inner
-            padding: 10% 7%
+            padding: 2em
             height: 80%
-            width: 80%
             margin: auto
+            .btn-small
+              display: inline-block
+              margin-bottom: 0px !important
+
 
         &:hover .project-tile-inner
           transition: all 0.5s
