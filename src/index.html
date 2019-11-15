@@ -61,11 +61,8 @@
   <div class="landing-img">
     <div class="header">
       <div data-aos="fade-right">
-        <h1><p>a</p><p>w</p><p>e</p><p>t</p><p>M</p><p>e</p><p>l</p><p>a</p><p>k</p><p>e</p></h1>
-        <p>
-          <i>web developer</i>
-          <a title="Personal github" href="https://github.com/awetmelake" style="margin-left: 1em;"><img class="pointer" src="/images/github-icon.png" width="25px"/></a>
-        </p>
+        <h1><p>a</p><p>w</p><p>e</p><p>t</p>.<p>M</p><p>e</p><p>l</p><p>a</p><p>k</p><p>e</p></h1>
+        <p><i>web developer</i></p>
         <br>
         "PEOPLE WORK BETTER TOGETHER"
       </div>
@@ -104,7 +101,7 @@
               <img src="https://i.imgur.com/oiW2eS0.png" loading="lazy" alt="taskflow demo" class="project-tile-img" />
               <div class="project-tile-description">
                 <p class="project-tile-description-title">
-                  Taskflow
+                  Taskflow  <i class="material-icons yellow-text text-darken-3" style="position: relative; top: 3px">star</i>
                 </p>
                 <p>Task/bug tracking app with sign in and realtime updates</p>
               </div>
@@ -156,36 +153,6 @@
           </div>
         </div>
         <!-- end of tetris project tile -->
-
-        <!-- start of moviedb project tile -->
-        <!-- <div class="project-tile" data-aos="fade-up">
-          <div class="project-tile-inner">
-            <div class="project-tile-front">
-              <img alt="moviedb demo" class="project-tile-img" src="./images/moviedb.jpg" loading="lazy" />
-              <div class="project-tile-description">
-                <p class="project-tile-description-title">
-                  MovieDB
-                </p>
-                <p>Media title look-up app with sign in and realtime updates</p>
-              </div>
-            </div>
-
-            <div class="project-tile-back">
-              <div class="project-tile-back-inner">
-                <div class="project-tile-description">
-                  <p class="project-tile-description-title">MovieDB</p>
-                  <p>React / Redux / Firestore / OMDB API</p>
-                </div>
-                <div class="divider"></div>
-                <div>
-                  <br>
-                  <a class=" modal-trigger btn-small blue btn-block z-depth-0" href="#moviedb-modal">More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- end of moviedb project tile -->
 
         <!-- start of weatherapp project tile -->
         <div class="project-tile" data-aos="fade-up">
@@ -242,6 +209,36 @@
         </div>
         <!-- end of postr project tile -->
 
+        <!-- start of moviedb project tile -->
+        <div class="project-tile" data-aos="fade-up">
+          <div class="project-tile-inner">
+            <div class="project-tile-front">
+              <img alt="moviedb demo" class="project-tile-img" src="./images/moviedb.jpg" loading="lazy" />
+              <div class="project-tile-description">
+                <p class="project-tile-description-title">
+                  MovieDB
+                </p>
+                <p>Media title look-up app with sign in and realtime updates</p>
+              </div>
+            </div>
+
+            <div class="project-tile-back">
+              <div class="project-tile-back-inner">
+                <div class="project-tile-description">
+                  <p class="project-tile-description-title">MovieDB</p>
+                  <p>React / Redux / Firestore / OMDB API</p>
+                </div>
+                <div class="divider"></div>
+                <div>
+                  <br>
+                  <a class=" modal-trigger btn-small blue btn-block z-depth-0" href="#moviedb-modal">about</a>
+                  <a class=" modal-trigger btn-small blue btn-block z-depth-0" href="https://moviedb.awettech.com">see live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of moviedb project tile -->
 
       </div>
     </div>
@@ -250,51 +247,39 @@
     <!-- start of project modals -->
 
     <!-- start of moviedb modal -->
-    <!-- <div id="moviedb-modal" class="modal">
-      <div class="modal-content center">
-        <div class="modal-content-header">
-          <h3 class="blue-text text-darken-3">
-            Movie DB <br>
-          </h3>
-          <div class="modal-content-header-btns">
-            <a href="https://moviedb.awettech.com" class="modal-close white-text btn-small  blue z-depth-0">
-              <i class="material-icons white-text left">remove_red_eye</i>
-              demo
-            </a>
-            <a href="https://github.com/awetmelake/movieapp" class="modal-close white-text btn-small  blue z-depth-0 darken-3">
-              <i class="material-icons white-text left">code</i>
-              GitHub
-            </a>
+    <div id="moviedb-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-content-header row">
+          <div class="col s12 l3">
+            <h3 class="blue-text text-darken-3">Movie DB</h3>
+            <p>React / Redux / Sass / Firebase / OpenMovieDatabaseAPI</p>
+            <div class="modal-content-header-btns">
+              <a href="https://moviedb.awettech.com" class="modal-close white-text btn-small  blue z-depth-0">
+                <i class="material-icons white-text left">remove_red_eye</i>
+                demo
+              </a>
+              <a href="https://github.com/awetmelake/movieapp" class="modal-close white-text btn-small  blue z-depth-0 darken-3">
+                <i class="material-icons white-text left">code</i>
+                GitHub
+              </a>
+            </div>
           </div>
+          <div class="col s12 l9 modal-content-description">
+            React application that uses the Open Movie Database Api to let
+            users search from 1000's of media titles. Search movies, tv-shows,
+            and games. Click on posters to be taken to details page where the title's information such as plot and imbd rating is displayed. Users can add and remove titles from their watchlist
+            when signed in. Changes are updated live with Cloud Firestore. Uses Firebase for authentication and Firestore for
+            storing users movie collections. React router handles routing and 404 pages. Redux used for state management.
+          </div>
+          <div class="clearfix"></div>
           <div class="divider"></div>
         </div>
-        <div class="modal-content-description">
-          React application that uses the Open Movie Database Api to let
-          users search from 1000's of media titles. Search movies, tv-shows,
-          and games. Click on posters to be taken to details page where the title's information such as plot and imbd rating is displayed. Users can add and remove titles from their watchlist
-          when signed in. Changes are updated live with Cloud Firestore. Uses Firebase for authentication and Firestore for
-          storing users movie collections. React router handles routing and 404 pages. Redux used for state management.
-        </div>
-        <div class="modal-content-info">
-          <img src="./images/moviedb.webp" alt="moviedb demo gif" class="project-tile-img center" loading="lazy" />
-          <div class="modal-content-info-tech">
-            <h5>Technologies Used</h5>
-            <div class="divider blue"></div>
-            <ul class="modal-content-info-tech-items">
-              <li>React + React Router</li>
-              <li>Redux</li>
-              <li>Sass</li>
-              <li>Google Firebase</li>
-              <li>React-router-firebase / Redux-firestore</li>
-              <li>OpenMovieDatabaseAPI</li>
-            </ul>
-          </div>
-        </div>
+        <img src="./images/moviedb.webp" alt="moviedb demo gif" class="project-tile-img" loading="lazy" />
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
-    </div> -->
+    </div>
     <!-- end of moviedb modal -->
 
     <!-- start of taskflow modal -->
@@ -446,48 +431,18 @@
       <hr />
       <br>
       <div class="about-main-description">
-        <h5 class="center" data-aos="fade-in">
-          Hello there! My name is Awet (uh-wet). <br>
-          <br>
-          I focus on full-stack, object and component based development. <br>
-          <br>
-          Why should you hire me? Here's a few reasons:
-        </h5>
-
-        <div class="about-cards">
-          <div class="about-card" data-aos="fade-up">
-            <i class="material-icons medium blue-text text-darken-4">
-              code
-            </i>
-            <h4>Passionate</h4>
-            <p>
-              I spend most of my free
-              time coding or learning about web development. Whether the task is large or small, I give it 100%.
-            </p>
-          </div>
-
-          <div class="about-card" data-aos="fade-up">
-            <i class="material-icons medium blue-text text-darken-4">
-              menu_book
-            </i>
-            <h4>Quick learner</h4>
-            <p>
-              Confident in my
-              ability to learn something new and put it into production. Always interested in learning best practices.
-            </p>
-          </div>
-
-          <div class="about-card" data-aos="fade-up">
-            <i class="material-icons medium blue-text text-darken-4">
-              people
-            </i>
-            <h4>Adaptable</h4>
-            <p>
-              The most valuable thing I can provide to your company is the
-              ability to be molded to your stack.
-            </p>
-          </div>
-        </div>
+        <p class="mb-1">
+          Hi my name is Awet (pronounced ah-wet). I live just north of the Twin cities area in Minnesota and am currently building web applications using JavaScript.
+        </p>
+        <p  class="mb-1">
+          My first exposure to web development was creating a Tetris clone after my favorite site to play tetris on shut down. The feeling of creating a functioning program after hours of research and debugging was so rewarding.
+        </p>
+        <p  class="mb-1">
+          Ever since I have fallen in love with web development and spend most of my days taking my craft to the next level.
+        </p>
+        <p>
+          Check out some of my projects, and feel free to shoot me an email if you'd like to work together.
+        </p>
       </div>
     </div>
     <!-- end of about-->
@@ -500,7 +455,12 @@
         <br>
         <div class="section-tile-description" data-aos="fade-in">
           What I know best
+
+          <i class="right grey-text">
+            + Responsive design / PHP / MySQL / Webpack / Gulp
+          </i>
         </div>
+        <br>
 
         <div class="skills-wrapper">
           <!-- skills one -->
@@ -555,14 +515,52 @@
           </div>
         </div>
         <br>
-        <div class="section-tile-description center blue-text" data-aos="fade-in">
-          <br>
-          <br>
-          + Responsive design / PHP / MySQL / Webpack / Gulp
-        </div>
       </div>
     </div>
     <!-- end of skills -->
+
+    <div class="section-tile" id="hire-me">
+      <h1 class="">why work with me?</h1>
+      <hr />
+      <br>
+      <div class="section-tile-description" data-aos="fade-in">
+        Here's a few reasons:
+      </div>
+      <div class="about-cards">
+        <div class="about-card" data-aos="fade-up">
+          <i class="material-icons medium blue-text text-darken-4">
+            code
+          </i>
+          <h4>Passionate</h4>
+          <p class="grey-text text-darken-3">
+            I spend most of my free
+            time coding or learning about web development. Whether the task is large or small, I give it 100%.
+          </p>
+        </div>
+
+        <div class="about-card" data-aos="fade-up">
+          <i class="material-icons medium blue-text text-darken-4">
+            menu_book
+          </i>
+          <h4>Quick learner</h4>
+          <p class="grey-text text-darken-3">
+            Confident in my
+            ability to learn something new and put it into production. Always interested in learning best practices.
+          </p>
+        </div>
+
+        <div class="about-card" data-aos="fade-up">
+          <i class="material-icons medium blue-text text-darken-4">
+            people
+          </i>
+          <h4>Adaptable</h4>
+          <p class="grey-text text-darken-3">
+            The most valuable thing I can provide to your company is the
+            ability to be molded to your stack.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- start of contact -->
     <div class="section-tile" id="contact">
@@ -571,15 +569,9 @@
       <br>
       <div class="contact-main container">
         <div class="contact-info">
-          <div  class="row" >
-            <div class="col s12 l4 " data-aos="fade-right">
-              <h5 class="">Email</h5>
-              <h6 class="grey-text text-darken-3">awetmelake@gmail.com</h6>
-            </div>
-
-            <div class="col l8" data-aos="fade-left">
-              <h5 class="center">Or fill out the form below</h5>
-              <br>
+          <div  class="row">
+            <div class="col s12 " data-aos="fade-left">
+              <p></p>
               <form action="mailto:awetmelake@gmail.com" method="post" enctype="text/plain">
                 Name:<br>
                 <input type="text" name="name"><br>
@@ -634,7 +626,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2019 code and design by Awet Melake
+        © 2019 Code and design by Awet Melake
       </div>
     </div>
   </footer>
@@ -644,7 +636,8 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1000
+      duration: 1000,
+      once: true
     });
   </script>
   <!-- Materialize Compiled and minified JavaScript -->

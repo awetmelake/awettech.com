@@ -24,7 +24,8 @@ body
   padding-top: 56px
   .pointer
     cursor: pointer
-
+  .mb-1
+    margin-bottom: .5em
   .btn
     opacity: 0.8
     cursor: pointer
@@ -142,6 +143,7 @@ body
 
     h1
       display: flex
+      font-family: "Roboto slab"
 
       p
         display: inline
@@ -166,23 +168,8 @@ body
         font-size: 1.4em
         font-family: "Roboto Condensed"
 
-      .about-cards
-        display: grid
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
-        grid-gap: 4em
-        align-items: center
-        padding: 60px 0 30px
-        width: 80%
-        margin: auto
-        .about-card
-          height: 100%
-          width: 100%
-          text-align: center
-          p
-            font-size: 1.1em
-
     #contact
-      background-color: #fcfcfc
+      background-color: $primary-color
       .contact-main
         width: 80%
         font-family: 'roboto Condensed'
@@ -196,6 +183,26 @@ body
 
     #skills
       background-color: $primary-color
+
+    #hire-me
+      background-color: #fcfcfc
+      .about-cards
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+        grid-gap: 4em
+        align-items: center
+        width: 70%
+        margin: auto
+        .about-card
+          height: 100%
+          width: 100%
+          text-align: center
+          p
+            font-family: 'roboto Condensed'
+            font-size: 1.1em
+      h5
+        font-family: 'roboto Condensed'
+
 
     .section-tile
       min-height: 50vh
@@ -285,14 +292,12 @@ body
       color: $primary-text-color
 
       &-description
-        width: 80%
+        width: 70%
         margin-top: 2em
-        p
-          line-height: 2
-          font-family: "Roboto Condensed"
-          font-size: 1.2em
-          margin-top: 1em
-
+        line-height: 2
+        font-family: "Roboto Condensed"
+        font-size: 1.2em
+        margin-top: 1em
         i
           font-size: 52px
 
@@ -319,10 +324,11 @@ body
       &-wrapper
         display: grid
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-        grid-gap: 2em
+        grid-gap: 0em
+        grid-row-gap: 2em
         align-items: center
         justify-content: center
-        width: 80%
+        width: 70%
 
         p
           margin-top: 2em
@@ -440,6 +446,10 @@ body
         margin-bottom: 2em
         width: 100%
         border-radius: 5px
+  .page-footer
+    font-family: "Roboto Condensed"
+    h5
+      font-family: "Roboto Slab"
 
 //mobile responsive
 @media (max-width: 900px)
@@ -488,7 +498,7 @@ body
       width: 90% !important
 
     .about-cards
-      width: 100% !important
+      width: 90% !important
 
     .modal-content-info
       padding: 0
